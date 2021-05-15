@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab4p2_carlossanabria;
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -13,9 +9,7 @@ import java.util.ArrayList;
  */
 public class Lab4P2_CarlosSanabria {
     public static Scanner sc= new Scanner(System.in);
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         int op=0;
@@ -53,7 +47,7 @@ public class Lab4P2_CarlosSanabria {
                                         + "Ingrese su opcion: ");
                                 opc2 = sc.nextInt();
                                 switch (opc2) {
-                                    case 1: {//AGREGAR
+                                    case 1: {
                                         int op1 = 0;
                                         while (op1 != 3) {
                                             System.out.println("***Menu***\n"
@@ -380,22 +374,22 @@ public class Lab4P2_CarlosSanabria {
                                                                                 leng_fav = sc.next();
                                                                                 ((Desarrolladores) emp.get(pos)).setLenguaje_p(leng_fav);
                                                                                 break;
-                                                                            }//fin del case
+                                                                            }
 
                                                                             default:
 
-                                                                        }//fin del Switch
-                                                                    }//fin del while
-                                                                }//fin de la condicion
+                                                                        }
+                                                                    }
+                                                                }
                                                                 validar = false;
 
                                                             } catch (InputMismatchException e) {
                                                                 System.out.println("Error!!!");
-                                                            }//fin del catch
-                                                        }//fin del while
+                                                            }
+                                                        }
                                                         break;
-                                                    }//fin del case
-                                                    case 2: {//Modificar Jugadores
+                                                    }
+                                                    case 2: {
                                                         boolean validar = true;
                                                         while (validar = true) {
                                                             try {
@@ -403,9 +397,9 @@ public class Lab4P2_CarlosSanabria {
                                                                     System.out.println("No hay Proyectos para modificar");
                                                                 } else {
                                                                     System.out.println("Ingrese posicion para modificar un Proyecto");
-                                                                    for (int i = 0; i < pro.size(); i++) { //Imprime solo el numero de Serie
+                                                                    for (int i = 0; i < pro.size(); i++) { 
                                                                         System.out.println("En la posicion " + i + ") " + ", está: " + pro.get(i).getNom());
-                                                                    }//fin del for
+                                                                    }
                                                                     System.out.print("Ingrese poscion: ");
                                                                     int pos2 = sc.nextInt();
                                                                     int opc11 = 0;
@@ -426,7 +420,7 @@ public class Lab4P2_CarlosSanabria {
                                                                                 Nombre_pro = sc.next();
                                                                                 pro.get(pos2).setNom(Nombre_pro);
                                                                                 break;
-                                                                            }//fin del case
+                                                                            }
 
                                                                             case 2: {
                                                                                 System.out.println("Ingrese el nombre de la Empresa: ");
@@ -560,10 +554,10 @@ public class Lab4P2_CarlosSanabria {
                                         break;
                                     }
 
-                                    case 5: {//Simulacion
+                                    case 5: {
 
                                         break;
-                                    }//fin del case 5
+                                    }
 
                                     default:
 
@@ -622,8 +616,8 @@ public class Lab4P2_CarlosSanabria {
                 System.out.println("Saliendo del sistema");
             }else{
                 System.out.println("La opcion que ingreso no existe");
-            }//fin del else
-        }//fin del while
-    }//fin del main
+            }
+        }
+    }
     
-}//fin de la clase
+}
